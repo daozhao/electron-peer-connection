@@ -1,0 +1,18 @@
+{
+  "name": "peer-connection-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "daozhao",
+  "license": "ISC",
+  "dependencies": {
+    "electron-peer-connection": "^1.0.6"
+  },
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "electron-peer-connection": "^1.0.6"
+  }
+}
