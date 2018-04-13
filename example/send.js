@@ -15,12 +15,18 @@ let sendwin = new WindowPeerConnection('sendWin');
 
 function startScreen() {
     navigator.mediaDevices.getUserMedia({
-        audio: true,
-        video: true
-    }).then(gotStream)
+        audio: false,
+        video: {
+            mandatory: {
+                chromeMediaSource: 'desktop',
+            }
+        }
+    })
+        .then(gotStream)
         .catch(function (e) {
             alert('getUserMedia() error: ' + e.name);
         });
+ 
 }
 
 function gotStream(stream) {
